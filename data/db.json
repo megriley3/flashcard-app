@@ -1,0 +1,156 @@
+{
+  "decks": [
+    {
+      "id": 1,
+      "name": "Rendering in React",
+      "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation. "
+    },
+    {
+      "name": "React Router",
+      "description": "React Router is a collection of navigational components that compose declaratively with your application.",
+      "id": 2
+    },
+    {
+      "name": "Gustavo",
+      "description": "Ramon",
+      "id": 14
+    },
+    {
+      "name": "Haro",
+      "description": "Questions about the capital of La Rioja.",
+      "id": 16
+    },
+    {
+      "name": "Portugal Trip",
+      "description": "Trip with Olivia and Meg",
+      "id": 17
+    },
+    {
+      "name": "warning",
+      "description": "react state update on an unmounted component",
+      "id": 18
+    },
+    {
+      "name": "warning",
+      "description": "component is changing an uncontrolled input",
+      "id": 19
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "front": "Differentiate between Real DOM and Virtual DOM.",
+      "back": "Virtual DOM updates are faster but do not directly update the HTML",
+      "deckId": 1
+    },
+    {
+      "id": 2,
+      "front": "How do you modify the state of a different React component?",
+      "back": "Not at all! State is visible to the component only.",
+      "deckId": 1
+    },
+    {
+      "id": 3,
+      "front": "How do you pass data 'down' to a React child component?",
+      "back": "As properties or props",
+      "deckId": 1
+    },
+    {
+      "front": "What path will match the follow Route?\n<Route>\n  <NotFound />\n</Route>",
+      "back": "All paths. A route with no path matches all URL's",
+      "deckId": 2,
+      "id": 4
+    },
+    {
+      "front": "What does <Switch> do?",
+      "back": "Renders the first matching child <Route> ",
+      "deckId": 2,
+      "id": 5
+    },
+    {
+      "cards": [],
+      "front": "b",
+      "back": "b",
+      "deckId": 1,
+      "id": 7
+    },
+    {
+      "front": "Which is the largest winery?",
+      "back": "Muga",
+      "deckId": 16,
+      "id": 12
+    },
+    {
+      "front": "Which winery was just named 4th in the world?",
+      "back": "Rioja Alta",
+      "deckId": 16,
+      "id": 13
+    },
+    {
+      "front": "Who is the best player on their volleyball team?",
+      "back": "Up for debate",
+      "deckId": 16,
+      "id": 14
+    },
+    {
+      "front": "Who is the first coach of the volleyball team?",
+      "back": "Esther Lopez",
+      "deckId": 16,
+      "id": 15
+    },
+    {
+      "front": "Where did Meg and Olivia see Fado?",
+      "back": "Clube de Fado",
+      "deckId": 17,
+      "id": 17
+    },
+    {
+      "front": "HOw many times did Meg kill the cards on the hills in Lisbon?",
+      "back": "3",
+      "deckId": 17,
+      "id": 18
+    },
+    {
+      "front": "Where did Meg and Olivia stay?",
+      "back": "LX hostel",
+      "deckId": 17,
+      "id": 19
+    },
+    {
+      "front": "Who did Meg and Olivia meet up  with?",
+      "back": "Kelly and Joann",
+      "deckId": 17,
+      "id": 20
+    },
+    {
+      "front": "When is Gustavo's birthday?",
+      "back": "February 15, 2021",
+      "deckId": 14,
+      "id": 21
+    },
+    {
+      "front": "What is Gustavo's nickname?",
+      "back": "Goose",
+      "deckId": 14,
+      "id": 22
+    },
+    {
+      "front": "Where was Gustavo found?",
+      "back": "Arkansas",
+      "deckId": 14,
+      "id": 23
+    },
+    {
+      "front": "This happens when?",
+      "back": "When I create a new deck.",
+      "deckId": 19,
+      "id": 24
+    },
+    {
+      "front": "This happens when?",
+      "back": "When I go back to the home screen from the studying the cards.",
+      "deckId": 18,
+      "id": 25
+    }
+  ]
+}
