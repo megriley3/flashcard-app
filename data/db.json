@@ -24,16 +24,6 @@
       "name": "Portugal Trip",
       "description": "Trip with Olivia and Meg",
       "id": 17
-    },
-    {
-      "name": "warning",
-      "description": "react state update on an unmounted component",
-      "id": 18
-    },
-    {
-      "name": "warning",
-      "description": "component is changing an uncontrolled input",
-      "id": 19
     }
   ],
   "cards": [
@@ -139,18 +129,6 @@
       "back": "Arkansas",
       "deckId": 14,
       "id": 23
-    },
-    {
-      "front": "This happens when?",
-      "back": "When I create a new deck.",
-      "deckId": 19,
-      "id": 24
-    },
-    {
-      "front": "This happens when?",
-      "back": "When I go back to the home screen from the studying the cards.",
-      "deckId": 18,
-      "id": 25
     }
   ]
 }

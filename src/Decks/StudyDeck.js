@@ -1,28 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import {useParams, useRouteMatch} from 'react-router-dom';
-import {readDeck} from '../utils/api/index';
+import {useRouteMatch} from 'react-router-dom';
 import Cards from '../Cards/index';
 
 function StudyDeck({deckUrl, deckId, deck}){
 
     const {url} = useRouteMatch();
-    //const {deckId} = useParams();
-    /*const [name, setName] = useState("");
-    const [cards, setCards] = useState([]);
-
-    useEffect(() => {
-        const controller = new AbortController();
-
-        async function loadDeck (){
-            const selectedDeck = await readDeck(deckId, controller.signal);
-             setName(selectedDeck.name)
-             setCards(selectedDeck.cards)
-            
-        };
-        loadDeck();
-        return () => controller.abort();
-        
-    }, [])*/
 
     const cards = deck.cards;
     const name = deck.name;

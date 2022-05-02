@@ -12,7 +12,7 @@ function Decks({decks, setDecks, deckDeleted, setDeckDeleted}){
                 <CreateDeck/>
             </Route>
             <Route path={`${path}/:deckId`}>
-                <DeckById decks={decks} setDecks={setDecks} deckDeleted={deckDeleted} setDeckDeleted={setDeckDeleted}/>
+                <DeckById deckDeleted={deckDeleted} setDeckDeleted={setDeckDeleted}/>
             </Route>
         </Switch>
     )

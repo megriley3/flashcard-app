@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom';
 import {createDeck, updateDeck} from '../utils/api/index';
 
 
-function DeckForm ({create, deck={name: "", description: ""}}){
+function DeckForm ({create, deck}){
     const history = useHistory();
     const [deckToEdit, setDeckToEdit] = useState(deck);    
 

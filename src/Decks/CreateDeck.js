@@ -4,7 +4,7 @@ import DeckForm from './DeckForm';
 
 
 function CreateDeck(){
-    const [deck, setDeck] = useState({})
+    const [deck, setDeck] = useState({name: "", description: ""})
   
     return (
         <>

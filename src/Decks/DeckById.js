@@ -7,7 +7,7 @@ import AddCard from '../Cards/AddCard';
 import EditCard from '../Cards/EditCard';
 import {readDeck} from '../utils/api/index';
 
-function DeckById({decks, setDecks, deckDeleted, setDeckDeleted}){
+function DeckById({deckDeleted, setDeckDeleted}){
     const {path} = useRouteMatch();
     const {url} = useRouteMatch();
     const {deckId} = useParams();
@@ -24,7 +24,7 @@ function DeckById({decks, setDecks, deckDeleted, setDeckDeleted}){
         loadDeck();
         return () => controller.abort();
         
-    }, [deck])
+    }, [deckId])
 
     return (
         <Switch>
