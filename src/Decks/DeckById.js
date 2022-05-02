@@ -24,7 +24,7 @@ function DeckById({deckDeleted, setDeckDeleted}){
         loadDeck();
         return () => controller.abort();
         
-    }, [deckId])
+    }, [deckId, deck.cards])
 
     return (
         <Switch>

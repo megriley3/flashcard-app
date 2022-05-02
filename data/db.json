@@ -129,6 +129,12 @@
       "back": "Arkansas",
       "deckId": 14,
       "id": 23
+    },
+    {
+      "front": "What are the choices for Gustavo's middle name?",
+      "back": "Ramon, Pau, and Jose",
+      "deckId": 14,
+      "id": 24
     }
   ]
 }
