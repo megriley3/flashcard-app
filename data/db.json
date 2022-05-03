@@ -135,6 +135,24 @@
       "back": "Ramon, Pau, and Jose",
       "deckId": 14,
       "id": 24
+    },
+    {
+      "front": "Where did Gustavo get adopted from?",
+      "back": "APA",
+      "deckId": 14,
+      "id": 25
+    },
+    {
+      "front": "Which winery was just awarded 4th best in the world?",
+      "back": "Rioja Alta",
+      "deckId": 16,
+      "id": 26
+    },
+    {
+      "front": "What is the river in Haro?",
+      "back": "Rio Ebro",
+      "deckId": 16,
+      "id": 27
     }
   ]
 }

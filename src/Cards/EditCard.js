@@ -3,9 +3,8 @@ import {useParams} from 'react-router-dom';
 import {readCard} from '../utils/api/index';
 import CardForm from './CardForm';
 
-function EditCard({deck, deckUrl}){
+function EditCard({deck, deckUrl, card, setCard}){
     const {cardId} = useParams();
-    const [card, setCard] =useState({});
     const {name} = deck;
     
     useEffect(()=>{

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import CardForm from './CardForm'
 
-function AddCard({deck, deckUrl}){
+function AddCard({deck, deckUrl, card, setCard}){
     const {name} = deck;
-    const [card, setCard] = useState({front: "", back: ""})
+    
     return (
         <>
         <nav aria-label="breadcrumb">
@@ -14,7 +14,7 @@ function AddCard({deck, deckUrl}){
                     </ol>
         </nav>
         <h4>{name}: Add Card</h4>
-        <CardForm add={true} deckId={deck.id} deckUrl={deckUrl} card={card} setCard={setCard} />
+        <CardForm add={true} deckId={deck.id} deckUrl={deckUrl} card={card} setCard={setCard}/>
         </>)
 }
 

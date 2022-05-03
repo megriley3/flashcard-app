@@ -20,6 +20,7 @@ function CardForm({add, deckId, deckUrl, card={front: "", back: ""}, setCard}) {
             setCard({front:"", back: ""})
         } else {
            updateCard(card)
+            .then((newCard) => setCard(newCard))
             .then(() => history.push(deckUrl))
         }
         

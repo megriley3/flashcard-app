@@ -12,9 +12,9 @@ function DeleteButton({deckId, deckDeleted, setDeckDeleted, deck=true, cardId}){
          
             if(deck){
                 result = window.confirm("Delete this Deck? You will not be able to recover it.");
-                setDeckDeleted(!deckDeleted);
 
                 if(result) {
+                    setDeckDeleted(!deckDeleted);
                     deleteDeck(deckId, controller.signal)
                         .then(() => history.push("/"));
                 }
@@ -23,6 +23,7 @@ function DeleteButton({deckId, deckDeleted, setDeckDeleted, deck=true, cardId}){
 
                 if(result){
                     deleteCard(cardId, controller.signal);
+                    setDeckDeleted(!deckDeleted);
                 }
             }
                       

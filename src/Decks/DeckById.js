@@ -12,6 +12,7 @@ function DeckById({deckDeleted, setDeckDeleted}){
     const {url} = useRouteMatch();
     const {deckId} = useParams();
     const [deck, setDeck] = useState({});
+    const [card, setCard] = useState({front: "", back: ""})
 
 
     useEffect(() => {
@@ -20,11 +21,12 @@ function DeckById({deckDeleted, setDeckDeleted}){
         async function loadDeck (){
             const selectedDeck = await readDeck(deckId, controller.signal);
             setDeck(selectedDeck);
+            console.log("called")
         };
         loadDeck();
         return () => controller.abort();
         
-    }, [deckId, deck.cards])
+    }, [deckId, card, deckDeleted])
 
     return (
         <Switch>
@@ -38,10 +40,10 @@ function DeckById({deckDeleted, setDeckDeleted}){
                 <StudyDeck deckUrl={url} deck={deck} deckId={deckId}/>
             </Route>
             <Route path={`${path}/cards/new`}>
-                <AddCard deck={deck} deckUrl={url}/>
+                <AddCard deck={deck} deckUrl={url} card={card} setCard={setCard}/>
             </Route>
             <Route path={`${path}/cards/:cardId/edit`}>
-                <EditCard deck={deck} deckUrl={url}/>
+                <EditCard deck={deck} deckUrl={url} card={card} setCard={setCard}/>
             </Route>
         </Switch>
     )

@@ -41,7 +41,7 @@ function ViewDeck({deck, deckDeleted, setDeckDeleted}){
                                         <div className="col">
                                             <p>{card.back}</p>
                                             <Link to={`${url}/cards/${card.id}/edit`} className="btn btn-secondary">Edit</Link>
-                                            <DeleteButton deck={false} cardId={card.id}/>
+                                            <DeleteButton deck={false} cardId={card.id} setDeckDeleted={setDeckDeleted}/>
                                         </div>
                                     </div>
                                     </div>
