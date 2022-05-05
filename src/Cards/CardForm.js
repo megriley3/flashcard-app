@@ -15,9 +15,12 @@ function CardForm({add, deckId, deckUrl, card={front: "", back: ""}, setCard}) {
     
     const handleSubmit = (event) => {
         event.preventDefault();
-        if(add){
+        if(add && card.front && card.back){
             createCard(deckId, card)
             setCard({front:"", back: ""})
+        } else if (add){
+            const result = window.confirm("Please enter valid data.");
+            if(!result) history.goBack();
         } else {
            updateCard(card)
             .then((newCard) => setCard(newCard))

@@ -22,11 +22,15 @@ function ViewDeck({deck, deckDeleted, setDeckDeleted}){
                 <main>
                     <h1>{name}</h1>
                     <p>{deck.description}</p>
-                    <div className="btn-group">
+                    <div className="row">
+                        <div className="col">
                         <a href={`${url}/edit`} className="btn btn-secondary active" aria-current="page">Edit</a>
-                        <a href={`${url}/study`} className="btn btn-primary">Study</a>
+                        <a href={`${url}/study`} className="btn btn-primary" style={{marginLeft: 10, marginRight: 10}}>Study</a>
                         <a href={`${url}/cards/new`} className="btn btn-primary">+ Add Cards</a>
+                        </div>
+                        <div className="col" style={{display: "flex", justifyContent: "flex-end", marginRight: 20}}>
                         <DeleteButton deckId={deckId} deckDeleted={deckDeleted} setDeckDeleted={setDeckDeleted}/>
+                        </div>
                     </div>
                     <div className="container">
                         <h2>Cards</h2>
@@ -39,9 +43,13 @@ function ViewDeck({deck, deckDeleted, setDeckDeleted}){
                                             <p>{card.front}</p>
                                         </div>
                                         <div className="col">
+                                            <div className="row">
                                             <p>{card.back}</p>
-                                            <Link to={`${url}/cards/${card.id}/edit`} className="btn btn-secondary">Edit</Link>
+                                            </div>
+                                            <div className="row right">
+                                            <Link to={`${url}/cards/${card.id}/edit`} className="btn btn-secondary" style={{marginRight: 10}}>Edit</Link>
                                             <DeleteButton deck={false} cardId={card.id} setDeckDeleted={setDeckDeleted}/>
+                                            </div>
                                         </div>
                                     </div>
                                     </div>

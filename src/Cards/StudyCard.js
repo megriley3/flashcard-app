@@ -58,7 +58,7 @@ function StudyCard({cards}){
                     <h4 className="card-title">Card {cardNum} of {cards.length}</h4>
                     <p className="card-text">{card.back}</p>
                     <button className="btn btn-secondary" onClick={handleFlip}>Flip</button>
-                    <button className="btn btn-primary" onClick={handleNext}>Next</button>
+                    <button className="btn btn-primary" onClick={handleNext} style={{marginLeft: "10px"}}>Next</button>
                 </div>
             </div>
         )
